@@ -11,3 +11,6 @@ jobs:
         with:
           root_file: BachelorAbschlussarbeit.tex
           path: BAalsPDF.tex
+        uses: actions/upload-artifact@v2
+        with:
+          path: BA.pdf
