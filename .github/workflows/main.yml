@@ -8,9 +8,9 @@ jobs:
       uses: actions/checkout@v2
       name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
-      with:
-        root_file: BachelorAbschlussarbeit.tex
-        path: BAalsPDF.tex
+        with:
+          root_file: BachelorAbschlussarbeit.tex
+          path: BAalsPDF.tex
       uses: actions/upload-artifact@v2
-      with:
-        path: BA.pdf
+        with:
+          path: BA.pdf
