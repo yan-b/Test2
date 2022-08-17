@@ -4,13 +4,14 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      name: Set up Git repository
-      uses: actions/checkout@v2
-      name: Compile LaTeX document
-      uses: xu-cheng/latex-action@v2
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
         with:
           root_file: BachelorAbschlussarbeit.tex
-          path: BAalsPDF.tex
-      uses: actions/upload-artifact@v2
+      - name: Upload PDF
+      - uses: actions/upload-artifact@v2
         with:
-          path: BA.pdf
+          name: PDF
+          path: main.pdf
