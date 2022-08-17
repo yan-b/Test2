@@ -11,7 +11,7 @@ jobs:
         with:
           root_file: BachelorAbschlussarbeit.tex
       - name: Upload PDF
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: PDF
           path: main.pdf
